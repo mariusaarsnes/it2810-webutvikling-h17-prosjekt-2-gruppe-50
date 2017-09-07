@@ -1,0 +1,22 @@
+{
+  "name": "prosjekt2",
+  "version": "1.0.0",
+  "description": "Oppgave 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "Test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariusaarsnes/IT2810.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariusaarsnes/IT2810/issues"
+  },
+  "homepage": "https://github.com/mariusaarsnes/IT2810#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
