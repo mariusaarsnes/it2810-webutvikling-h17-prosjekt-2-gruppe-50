@@ -1,5 +1,6 @@
 var circles = $('.circle');
 var topleftcontent = $('.top-left-content');
+var readmore = $('#read-more');
 
 function circleResizer() {
 	circles.each(function() {
@@ -8,7 +9,6 @@ function circleResizer() {
 		$(this).css('height', $(this).width());
 	});
 }
-
 $(window).resize(function() {
 	if(this.resizeTO) clearTimeout(this.resizeTO);
     this.resizeTO = setTimeout(function() {
@@ -17,9 +17,23 @@ $(window).resize(function() {
 
 	circleResizer();
 });
+//scroll handeling
+$( window ).scroll(function() {
+  $( "nav" ).css( "background-color", "#393c80" );
+  if($(window).scrollTop() === 0) {
+  	$("nav").css("background-color", "transparent");
+  }
+});
+function scroll_to_anchor(anchor_id){
+    var tag = $("#"+anchor_id+"");
+    $('html,body').animate({scrollTop: tag.offset().top},'slow');
+}
 
+//click functions
+readmore.click(function() {
+	scroll_to_anchor("pagecontent");
+});
 
-circleResizer();
 
 
 function animateCircles(circle, bigger, time) {
@@ -38,13 +52,18 @@ function animateCircles(circle, bigger, time) {
 			animateCircles(circle, true, time);
 		});
 	}
- }
+}
  function startCircles() {
  	circles.each(function() {
- 		animateCircles($(this), true, Math.floor((Math.random() * 2000) + 1000));
+ 		animateCircles($(this), true, Math.floor((Math.random() * 1500) + 700));
  	})
  }
- startCircles();
+function init() {
+	circleResizer();
+ 	startCircles();
+}
+
+init();
  
 
 
