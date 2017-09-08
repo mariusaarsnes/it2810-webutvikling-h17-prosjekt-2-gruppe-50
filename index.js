@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 var path = require("path");
+process.title = project2;
 
 app.use('/assets/style', express.static(path.join(__dirname, 'assets/style')));
 app.use('/assets/images', express.static(path.join(__dirname, 'assets/images')));
