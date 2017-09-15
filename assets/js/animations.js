@@ -1,6 +1,6 @@
 var circles = $('.circle');
 var topleftcontent = $('.top-left-content');
-var readmore = $('#read-more');
+var readmore = $('.read-more');
 
 function circleResizer() {
 	circles.each(function() {

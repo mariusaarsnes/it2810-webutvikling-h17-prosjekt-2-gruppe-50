@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "Test",
-    "stop": "pkill --signal SIGINT project2",	
+    "stop": "pkill --signal SIGINT project2",
     "start": "nohup node index.js &"
   },
   "repository": {
