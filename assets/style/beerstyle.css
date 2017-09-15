@@ -22,3 +22,13 @@
     list-style-type: none;
     text-align: left;
 }
+.beer-bubble {
+    background: #F89939;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    border-radius: 50%;
+    position: relative;
+    display: none;
+}
