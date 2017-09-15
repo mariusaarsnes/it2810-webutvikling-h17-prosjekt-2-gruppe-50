@@ -1,0 +1,20 @@
+#beer-icon {
+    width: 45px;
+    transform: scaleX(-1);
+}
+#beer-cartoon {
+    max-width: 228px;
+}
+.flex {
+    flex: 1;
+    display: flex;
+}
+.margin-right {
+    margin-right: 15%;
+}
+.margin-left {
+    margin-left: 15%;
+}
+.align-left {
+    flex-flow: row;
+}
