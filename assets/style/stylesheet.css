@@ -226,12 +226,15 @@ footer a {
 }
 .btn-pink:hover {
 	background-color: black;
-} 
+}
 
 /*hr styling*/
 .hrshort {
 	width: 100px;
 	border-bottom: 5px solid #47B541;
 	margin: 0 auto;
-
+}
+#beer-icon {
+    width: 45px;
+    transform: scaleX(-1);
 }
