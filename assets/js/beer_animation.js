@@ -19,11 +19,10 @@ function initiateBubbles(bubbles) {
 
 function animateBubble(bubble, index) {
     var position = assignPosition();
-    var rand = randomInterval(1500, 3000);
     bubble.css({ "right" : "" + (position[0] + (index * bubbleWidth)) + "px", "top" : "" + position[1] + "px", "display":"block" });
     bubble.animate({
         top: "-=" + (position[1] - getHeight(position[0]))
-    }, rand, function() {
+    }, randomInterval(1500, 3000), function() {
         animateBubble(bubble, index);
     });
 }
