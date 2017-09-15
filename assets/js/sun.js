@@ -1,16 +1,3 @@
-function play() {
-  document.getElementById('player').play();
-}
-
-function pause() {
-  document.getElementById('player').pause();
-}
-
-function setVolume() {
-  var audio = document.getElementById('player');
-  audio.volume = document.getElementById('fader').value;
-}
-
 var slideIndex = 1;
 
 function plusSlides(n) {
