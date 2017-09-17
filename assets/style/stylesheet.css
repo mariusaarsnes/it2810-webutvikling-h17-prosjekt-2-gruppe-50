@@ -71,6 +71,10 @@ nav ul li a:hover {
 	display: flex;
 	flex-direction: column;
 }
+.flex-container-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .top-content {
 	display: flex;
 	width: 100%;
@@ -226,12 +230,11 @@ footer a {
 }
 .btn-pink:hover {
 	background-color: black;
-} 
+}
 
 /*hr styling*/
 .hrshort {
 	width: 100px;
 	border-bottom: 5px solid #47B541;
 	margin: 0 auto;
-
 }
