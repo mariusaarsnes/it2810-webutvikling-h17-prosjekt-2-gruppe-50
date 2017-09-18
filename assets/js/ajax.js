@@ -13,7 +13,7 @@ $("a").click(function(e) {
     var temp = e.className.split(" ")[0];
     $.get("assets/content/"+ dict[temp], function(data) {
         $("#pagecontent").html(data);
-        if (temp == "nav-beer-button") {
+        if (temp == "beer-button") {
             initiateBubbles($(".beer-bubble"));
         }
     });
