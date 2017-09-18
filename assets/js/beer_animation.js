@@ -16,7 +16,6 @@ function assignPosition() {
 function initiateBubbles() {
     for (let i = 0; i < bubbleCount; i++) {
         $("#bubble-div").append("<div class='beer-bubble'></div>");
-        console.log($("bubble-div"));
     }
     bubbles = $(".beer-bubble")
     bubbles.each(function(index) {
