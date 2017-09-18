@@ -9,8 +9,11 @@ var dict = {
 };
 
 
+
+
 $("a").click(function(e) {
-    var temp = e.className.split(" ")[0];
+    var temp = e.target.className.split(" ")[0];
+    console.log(temp);
     $.get("assets/content/"+ dict[temp], function(data) {
         $("#pagecontent").html(data);
         if (temp == "beer-button") {
