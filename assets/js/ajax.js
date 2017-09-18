@@ -6,7 +6,8 @@ var dict = {
     "beer-button": "beer.html",
     "eddy-button": "eddy.html",
     "doc-button": "documentation.html"
-}
+};
+
 
 
 
