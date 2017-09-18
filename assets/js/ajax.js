@@ -4,7 +4,8 @@ var dict = {
     "nav-travel-button": "travel.html",
     "nav-sun-button": "sun.html",
     "nav-beer-button": "beer.html",
-    "nav-eddy-button": "eddy.html"
+    "nav-eddy-button": "eddy.html",
+    "nav-documentation-button": "documentation.html"
 };
 
 
