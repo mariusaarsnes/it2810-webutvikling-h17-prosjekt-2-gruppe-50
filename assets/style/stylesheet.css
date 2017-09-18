@@ -55,7 +55,7 @@ nav ul{
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 }
-nav ul li {
+nav ul li , ul li {
 	display: block;
 	text-align: center;
 	list-style-type: none;
@@ -167,7 +167,7 @@ nav ul li a:hover {
 	margin: 0 auto;
 	font-size: 22px;
 }
-.info-presentation img {
+.info-presentation .icon {
 	width: 30px;
 	position: absolute;
 	left: -55px;
@@ -324,3 +324,9 @@ footer a {
 }
 
 
+<<<<<<< HEAD
+/* Sub-page styling */
+
+
+=======
+>>>>>>> a4a2567009e11baf2b5a31f2d466d4f608fbcfc6
