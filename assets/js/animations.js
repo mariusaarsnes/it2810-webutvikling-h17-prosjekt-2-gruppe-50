@@ -64,6 +64,3 @@ function init() {
 }
 
 init();
- 
-
-

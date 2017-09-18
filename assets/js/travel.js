@@ -13,33 +13,7 @@ $(function() {
     });
 
 
-    var index = 1;
-    changeSlides(index);
 
-    $('#left').click(function() {
-        changeSlides( index -= 1);
-    });
-    $('#right').click(function() {
-        changeSlides( index += 1);
-    });
-
-
-    function changeSlides(n) {
-        var slides = $('.slides');
-        if (n > slides.length-1) {
-            index = 0;
-        }
-        else if (n < 0) {
-            index = slides.length-1;
-        }
-
-        slides.css('display', 'none');
-        $(slides[index]).css('display', 'block');
-    }
-
-    setInterval(function() {
-        changeSlides(index += 1);
-    }, 10000);
 });
 
 

@@ -9,12 +9,13 @@ var dict = {
 };
 
 
-
 $("a").click(function(e) {
     var temp = e.target.id;
     console.log(temp);
     $.get("assets/content/"+ dict[temp], function(data) {
         $("#pagecontent").html(data)
-    })
+        if (temp == "nav-beer-button") {
+            initiateBubbles($(".beer-bubble"));
+        }
+    });
 }) ;
-
