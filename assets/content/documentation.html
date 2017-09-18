@@ -14,10 +14,10 @@
                     <li>Dere skal brukejQuery, og det er kun lov å bruke basis-biblioteket (og ikke UI-biblioteket).
                         I løsningen skal dere ha med:
                         <ol>
-                            <li> jQuery selector-funksjonaliteten</li>
-                            <li>en eller flere funksjoner fra jQuery APIet</li>
-                            <li>funksjon som parameter</li>
-                            <li>form for event-håndtering (f.eks. assosiere funksjoner med elementene i navigasjonsbaren).</li>
+                            <li>jQuery selector-funksjonaliteten</li>
+                            <li>En eller flere funksjoner fra jQuery APIet</li>
+                            <li>Funksjon som parameter</li>
+                            <li>Form for event-håndtering (f.eks. assosiere funksjoner med elementene i navigasjonsbaren).</li>
                             <li>Hvordan dere har løst disse punktene skal beskrives på dokumentasjonssiden</li>
                         </ol>
                     </li>
@@ -29,7 +29,72 @@
     <div class="page-right-content">
         <div class="info-presentation">
             <h3>Forklaring:</h3>
-            <ol><img src="assets/images/doc/1.png"></ol>
+            <ol>
+                <li>
+                    <img id="code" src="assets/images/doc/1.png">
+                    <p>Scriptet setter opp et nytt prosjekt med express.
+                        Scriptet assosierer også lenker til relevante mapper som blir brukt på siden vår.
+                        Etter det ber vi serveren lytte på port 8082, og viser index.html til de som besøker siden.
+                    </p>
+                </li>
+                <li>
+                    <p>Dette har blitt gjort. Prosjektet ligger på it2810-50.idi.ntnu.no:8082</p>
+                </li>
+                <li>
+                    <p>Flexbox har blitt brukt for å style og plassere elementer i navbaren.
+                        Flexbox har også blitt brukt til å plassere animasjonen på venstre
+                        side av "top-content" og teksten til høyre for ballene.
+                        Innholdet på bunnen er også stylet og plassert med flexbox.
+                        Til slutt, hovedelementene på siden har blitt plassert under hverandre med Flexbox.
+                        (se stylesheet.css)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Dette har blitt gjort
+                        Navigasjonsbaren har blitt konstruert med en nav-tag som inneholder en liste (ul).
+                        Listen har blitt stylet til å ligne mer på en navbar enn en liste. (se stylesheet.css)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Ajax har blitt brukt for å laste inn innhold asynkront,
+                        basert på hvilken knapp brukeren trykker på i navbaren.
+                    </p>
+                </li>
+                <li>
+                    <ol>
+                        <li>
+                            <p>Dette har blitt brukt. Se i animations.js for eksempel ($.("et eller annet"))</p>
+                        </li>
+                        <li>
+                            <p>Dette har blitt brukt. Se i animations.js.
+                                Det har blitt brukt for eksempel for å få siden til å scrolle </p>
+                        </li>
+                        <li>
+                            <p>Dette har blitt brukt. Se i animations.js.
+                            eks: se funksjon for å scrolle på siden.</p>
+                        </li>
+                        <li>
+                            <p>Dette har blitt brukt i for eksempel ajax.js.
+                                 Funksjonen lytter etter et en av nav-knappene blir trykket på,
+                                når det skjer leses HTML inn i index.html basert på hvilken knapp som ble trykket på.  </p>
+                        </li>
+
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        Wevsiden er gjort responsiv med å bruke prosent og vw.
+                        Det er i tillegg blitt brukt @media i css for å håndtere ulike skjermstørrelser.
+                    </p>
+                </li>
+                <li>
+                    <p>Dette har blitt gjort, og dokumentet er levert.</p>
+                </li>
+
+
+            </ol>
 
         </div>
     </div>
