@@ -5,12 +5,13 @@ var dict = {
     "sun-button": "sun.html",
     "beer-button": "beer.html",
     "eddy-button": "eddy.html",
-    "button": "documentation.html"
+    "doc-button": "documentation.html"
 };
 
 
 $("a").click(function(e) {
-    var temp = e.className.split(" ")[0];
+    var temp = e.target.className.split(" ")[0];
+    console.log(temp);
     $.get("assets/content/"+ dict[temp], function(data) {
         $("#pagecontent").html(data);
         if (temp == "beer-button") {
