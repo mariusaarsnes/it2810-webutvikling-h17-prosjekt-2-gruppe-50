@@ -6,14 +6,19 @@ var bubblePool = [[50, 70, 133], [70, 74, 136], [74, 77, 139],
 
 var startWidth = [50, 145];
 var startHeight = [75, 85];
-var bubbleHeight = 10;
+var bubbleHeight = 10, bubbleCount = 6;
 
 function assignPosition() {
     return [randomInterval(startWidth[0], startWidth[1]),
             randomInterval(startHeight[0], startHeight[1])];
 }
 
-function initiateBubbles(bubbles) {
+function initiateBubbles() {
+    for (let i = 0; i < bubbleCount; i++) {
+        $("#bubble-div").append("<div class='beer-bubble'></div>");
+        console.log($("bubble-div"));
+    }
+    bubbles = $(".beer-bubble")
     bubbles.each(function(index) {
         animateBubble($(this), index);
     });
