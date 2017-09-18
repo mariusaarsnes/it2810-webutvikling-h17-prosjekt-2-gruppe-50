@@ -4,23 +4,7 @@
 }
 #beer-cartoon {
     max-width: 228px;
-}
-.flex {
-    flex: 1;
-    display: flex;
-}
-.margin-right {
-    margin-right: 15%;
-}
-.margin-left {
-    margin-left: 5%;
-}
-.align-left {
-    flex-flow: row;
-}
-.list {
-    list-style-type: none;
-    text-align: left;
+    max-height: 296px;
 }
 .beer-bubble {
     background: #F89939;
