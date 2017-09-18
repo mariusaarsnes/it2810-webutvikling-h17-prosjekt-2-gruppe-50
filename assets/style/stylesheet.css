@@ -164,7 +164,7 @@ nav ul li a:hover {
 	margin: 0 auto;
 	font-size: 22px;
 }
-.info-presentation img {
+.info-presentation .icon {
 	width: 30px;
 	position: absolute;
 	left: -55px;
