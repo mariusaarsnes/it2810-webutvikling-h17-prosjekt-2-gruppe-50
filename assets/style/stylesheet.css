@@ -52,7 +52,7 @@ nav ul{
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 }
-nav ul li {
+nav ul li , ul li {
 	display: block;
 	text-align: center;
 	list-style-type: none;
@@ -235,3 +235,8 @@ footer a {
 	margin: 0 auto;
 
 }
+
+
+/* Sub-page styling */
+
+
