@@ -71,6 +71,10 @@ nav ul li a:hover {
 	display: flex;
 	flex-direction: column;
 }
+.flex-container-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .top-content {
 	display: flex;
 	width: 100%;
@@ -80,7 +84,7 @@ nav ul li a:hover {
 	font-family: IntroRust, sans-serif;
 }
 .top-content h1 {
-	line-height: 20px;
+	/*line-height: 20px;*/
 }
 .top-content a {
 	color: white;
@@ -136,13 +140,14 @@ nav ul li a:hover {
 	padding-top: 50px;
 }
 .page-content h1 {
-	line-height: 20px;
+	/*line-height: 20px;*/
 }
 .page-content-flex {
 	display: flex;
+	flex-direction: row;
 	font-family: 'Lato', sans-serif;
 }
-.page-content-flex div {
+.page-content-flex > div {
 	flex: 1 1 100%;
 }
 .page-right-content {
@@ -226,14 +231,37 @@ footer a {
 }
 .btn-pink:hover {
 	background-color: black;
-} 
+}
 
 /*hr styling*/
 .hrshort {
 	width: 100px;
 	border-bottom: 5px solid #47B541;
 	margin: 0 auto;
+}
 
+/*Media queries */
+@media screen and (max-width: 768px) {
+	.page-content-flex > div {
+		flex: 1 1 auto;
+	}
+	.page-content-flex {
+		flex-direction: column;
+	}
+	footer {
+		flex-direction: column;
+	}
+	footer .containers {
+		width: 80%;
+		margin: auto;
+		justify-content: left;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.top-left-content {
+		display: none;
+	}
 }
 
 

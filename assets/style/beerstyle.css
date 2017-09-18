@@ -1,0 +1,35 @@
+#beer-icon {
+    width: 45px;
+    transform: scaleX(-1);
+}
+#beer-cartoon {
+    max-width: 228px;
+    max-height: 296px;
+}
+.flex {
+    flex: 1;
+    display: flex;
+}
+.margin-right {
+    margin-right: 15%;
+}
+.margin-left {
+    margin-left: 5%;
+}
+.align-left {
+    flex-flow: row;
+}
+.list {
+    list-style-type: none;
+    text-align: left;
+}
+.beer-bubble {
+    background: #F89939;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    border-radius: 50%;
+    position: relative;
+    display: none;
+}
