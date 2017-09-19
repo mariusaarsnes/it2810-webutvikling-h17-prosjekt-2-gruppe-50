@@ -17,7 +17,7 @@ $("a").click(function(e) {
     $.get("assets/content/"+ dict[temp], function(data) {
         $("#pagecontent").html(data);
         if (temp == "beer-button") {
-            initiateBubbles($(".beer-bubble"));
+            initiateBubbles();
         }
     });
 }) ;
