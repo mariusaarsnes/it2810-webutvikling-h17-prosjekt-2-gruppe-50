@@ -11,7 +11,7 @@ app.use('/assets/content', express.static(path.join(__dirname, 'assets/content')
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html" ));
-})
+});
 
 app.listen(8082, function () {
   console.log('Server has started, listening on port 8082')
