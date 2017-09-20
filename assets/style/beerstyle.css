@@ -6,6 +6,10 @@
     max-width: 228px;
     max-height: 296px;
 }
+#bubble-div {
+    display: inline-block;
+}
+
 .beer-bubble {
     background: #F89939;
     min-width: 10px;
