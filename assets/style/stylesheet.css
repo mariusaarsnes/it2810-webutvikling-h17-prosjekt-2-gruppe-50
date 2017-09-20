@@ -37,7 +37,7 @@ a {
 nav {
 	position: fixed;
 	width: 100%;
-	background-color: transparent;
+	background-color: #4b4fa1;
 	z-index: 1000;
 	display: flex;
 	font-size: 12px;
@@ -261,5 +261,23 @@ footer a {
 	}
 }
 
-
-
+@media screen and (max-width: 480px) {
+	.top-left-content {
+		display: none;
+	}
+	.page-content > h1 {
+		font-size: 40px;
+	}
+	nav {
+		position: relative;
+		background-color: #393c80;
+		flex-direction: column;
+	}
+	nav ul {
+		flex-direction: column;
+		text-align: center;
+	}
+	nav div {
+		flex: 1 1 auto;
+	}
+}

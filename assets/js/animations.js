@@ -19,11 +19,13 @@ $(window).resize(function() {
 });
 //scroll handeling
 $( window ).scroll(function() {
-    var navBar = $( "nav" );
-    navBar.css( "background-color", "#393c80" );
-    if($(window).scrollTop() === 0) {
-  	    navBar.css("background-color", "transparent");
-    }
+	if(window.innerWidth > 480 ){
+	    var navBar = $( "nav" );
+	    navBar.css( "background-color", "#393c80" );
+	    if($(window).scrollTop() === 0) {
+	  	    navBar.css("background-color", "#4b4fa1");
+	    }
+	}
 });
 function scroll_to_anchor(anchor_id){
     var tag = $("#"+anchor_id+"");

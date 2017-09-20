@@ -13,5 +13,9 @@
 }
 
 .page-left-content .text {
-    font-size: 1.5vw;
+    font-size: 20px;
+    text-align: center;
+}
+.page-left-content ul {
+	padding: 0;
 }
