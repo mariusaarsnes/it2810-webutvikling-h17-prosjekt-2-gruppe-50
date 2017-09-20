@@ -17,7 +17,7 @@ function initiateBubbles() {
     for (let i = 0; i < bubbleCount; i++) {
         $("#bubble-div").append("<div class='beer-bubble'></div>");
     }
-    bubbles = $(".beer-bubble")
+    bubbles = $(".beer-bubble");
     bubbles.each(function(index) {
         animateBubble($(this), index);
     });
@@ -34,7 +34,7 @@ function animateBubble(bubble, index) {
 }
 
 function getHeight(startWidth) {
-    for (let i = 0; i < bubblePool.length; i++) {
+    for (var i = 0; i < bubblePool.length; i++) {
         if (startWidth >= bubblePool[i][0] && startWidth < bubblePool[i][1])
             return bubblePool[i][2];
     }
