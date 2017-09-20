@@ -1,20 +1,23 @@
 var dict = {
-    "nav-home-button": "home.html",
-    "nav-dog-button": "dog.html",
-    "nav-travel-button": "travel.html",
-    "nav-sun-button": "sun.html",
-    "nav-beer-button": "beer.html",
-    "nav-eddy-button": "eddy.html"
+    "home-button": "home.html",
+    "dog-button": "dog.html",
+    "travel-button": "travel.html",
+    "sun-button": "sun.html",
+    "beer-button": "beer.html",
+    "eddy-button": "eddy.html",
+    "doc-button": "documentation.html"
 };
 
 
+
+
 $("a").click(function(e) {
-    var temp = e.target.id;
+    var temp = e.target.className.split(" ")[0];
     console.log(temp);
     $.get("assets/content/"+ dict[temp], function(data) {
-        $("#pagecontent").html(data)
-        if (temp == "nav-beer-button") {
-            initiateBubbles($(".beer-bubble"));
+        $("#pagecontent").html(data);
+        if (temp == "beer-button") {
+            initiateBubbles();
         }
     });
 }) ;
