@@ -6,7 +6,7 @@ var bubblePool = [[50, 70, 133], [70, 74, 136], [74, 77, 139],
 
 var startWidth = [50, 145];
 var startHeight = [75, 85];
-var bubbleHeight = 10, bubbleCount = 50;
+var bubbleHeight = 10, bubbleCount = 7;
 
 function assignPosition() {
     return [randomInterval(startWidth[0], startWidth[1]),
