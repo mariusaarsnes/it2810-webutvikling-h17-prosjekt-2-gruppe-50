@@ -6,7 +6,8 @@ var dict = {
     "beer-button": "beer.html",
     "eddy-button": "eddy.html",
     "doc-button": "documentation.html"
-}
+};
+
 
 
 
@@ -16,7 +17,7 @@ $("a").click(function(e) {
     $.get("assets/content/"+ dict[temp], function(data) {
         $("#pagecontent").html(data);
         if (temp == "beer-button") {
-            initiateBubbles($(".beer-bubble"));
+            initiateBubbles();
         }
     });
 }) ;
