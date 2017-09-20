@@ -19,10 +19,12 @@ $(window).resize(function() {
 });
 //scroll handeling
 $( window ).scroll(function() {
-  $( "nav" ).css( "background-color", "#393c80" );
-  if($(window).scrollTop() === 0) {
-  	$("nav").css("background-color", "transparent");
-  }
+	if(window.innerWidth > 480 ){
+		$( "nav" ).css( "background-color", "#393c80" );
+  		if($(window).scrollTop() === 0) {
+  			$("nav").css("background-color", "transparent");
+  		}
+	}
 });
 function scroll_to_anchor(anchor_id){
     var tag = $("#"+anchor_id+"");
