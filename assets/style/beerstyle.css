@@ -16,3 +16,8 @@
     position: relative;
     display: none;
 }
+.page-right-content ul {
+    padding: 0;
+
+}
+

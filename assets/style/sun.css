@@ -10,6 +10,10 @@
 
 .mySlides img{
   width: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: -1px 3px 25px -2px rgba(0,0,0,0.54);
+  -moz-box-shadow: -1px 3px 25px -2px rgba(0,0,0,0.54);
+  box-shadow: -1px 3px 25px -2px rgba(0,0,0,0.54);
 }
 
 .prev, .next {
@@ -73,6 +77,9 @@
   background-color: #717171;
 }
 
+.element-div ul {
+  padding: 0;
+}
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;

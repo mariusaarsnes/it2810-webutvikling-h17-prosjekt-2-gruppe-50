@@ -22,7 +22,7 @@ $( window ).scroll(function() {
 	if(window.innerWidth > 480 ){
 		$( "nav" ).css( "background-color", "#393c80" );
   		if($(window).scrollTop() === 0) {
-  			$("nav").css("background-color", "transparent");
+  			$("nav").css("background-color", "#4b4fa1");
   		}
 	}
 });
