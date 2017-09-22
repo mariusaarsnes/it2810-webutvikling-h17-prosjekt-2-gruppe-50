@@ -47,7 +47,7 @@
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
     .top-left-content {
         display: none;
     }
@@ -57,5 +57,11 @@
     }
     .travelDestination {
         width: 100%;
+    }
+    .cities {
+        width: 70%;
+    }
+    .cities:hover {
+        width:70%;
     }
 }
