@@ -18,7 +18,7 @@
 }
 
 .travelDestination {
-    height: 500px;
+    height: 600px;
     width: 300px;
     margin-top: 5%;
 
@@ -59,9 +59,9 @@
         width: 100%;
     }
     .cities {
-        width: 70%;
+        width: 90%;
     }
     .cities:hover {
-        width:70%;
+        width:90%;
     }
 }
